@@ -18,5 +18,5 @@ def load_csv_tables(data_dir="data/"):
             table_name = os.path.splitext(filename)[0]
             df = pd.read_csv(path)
             tables[table_name] = df
-            print(f"✅ Loaded table '{table_name}' with shape {df.shape}")
+            
     return tables
